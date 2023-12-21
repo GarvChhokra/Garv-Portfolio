@@ -3,31 +3,35 @@ import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <div className="p-4 md:p-8 lg:p-12 text-center">
+    <div id="Contact">
+    <div className="bg-gray-100 p-4 md:p-8 lg:p-12 text-center">
       <p className="text-gray-500 text-sm md:text-base">Get in Touch</p>
-      <h2 className="text-2xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
+      <h2 className="text-3xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
         Contact Me
       </h2>
-      <div className="flex items-center justify-center mt-10 text-xl">
-        <div className="flex items-center justify-center border border-gray-400 rounded-2xl w-1/3 p-5 mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-10 text-xl">
+        <div className="flex flex-col items-center mb-6 md:mb-0 md:border border-gray-400 rounded-2xl p-5">
           <a
-            className="flex px-5"
+            className="flex items-center hover:underline"
             href="mailto:garvchhokra@gmail.com"
             target="_blank"
           >
-            <AiOutlineMail className="mt-1 mx-2 rounded-full" />
+            <AiOutlineMail className="mr-2" />
             garvchhokra@gmail.com
           </a>
+        </div>
+        <div className="flex flex-col items-center md:border-t md:border-b border-gray-400 md:mx-4 py-4">
           <a
-            className="flex ml-10"
+            className="flex items-center hover:underline"
             href="https://www.linkedin.com/in/garvchhokra/"
             target="_blank"
           >
-            <AiFillLinkedin className="mt-1 mx-2" />
+            <AiFillLinkedin className="mr-2" />
             LinkedIn
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 };

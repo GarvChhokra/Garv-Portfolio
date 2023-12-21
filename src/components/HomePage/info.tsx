@@ -1,8 +1,9 @@
-"use client";
+"use client"
 import Link from "next/link";
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import styled from "styled-components";
+import { LuBadgeCheck } from "react-icons/lu";
 
 const Button = styled.button<{ $primary?: boolean }>`
   color: ${(props) => (props.$primary ? "black" : "white")};
@@ -20,36 +21,33 @@ const Button = styled.button<{ $primary?: boolean }>`
     color: ${(props) => (props.$primary ? "white" : "blacks")};
   }
 `;
+
 const Info = () => {
   return (
-    <>
-      <div className="text-center xl:p-4 xl:w-3/4 mb-5">
-        <p className="text-gray-500">Hello, I'm</p>
-        <h2 className="text-4xl font-bold tracking-wider">Garv Chhokra</h2>
-        <p className="text-gray-500 text-lg mt-4">
-          AI/ML Developer | Data Scientist | Data Engineer | Data Analyst |
-          Software Developer | Full Stack Developer
-        </p>
-        <p className="text-gray-700 text-xl mt-10">
-          Currently working as an I&IT Technology Analyst/Developer
-        </p>
-        <p className="text-gray-700 text-xl mt-5">
-          Student of Centennial College pursuing Software Engineering Technology
-          - Artificial Intelligence
-        </p>
-        <p className="text-gray-700 text-xl mt-2">Based in Canada. </p>
-        <div className="flex text-center justify-between text-4xl rounded-full mt-10 mb-10">
-          <Link href="https://www.linkedin.com/in/garvchhokra/" target="blank">
-            <AiFillLinkedin />
-          </Link>
-          <Link href="https://github.com/GarvChhokra" target="blank">
-            <AiFillGithub />
-          </Link>
-        </div>
-        <Button $primary>Resume</Button>
-        <Button>Contact Me</Button>
+    <div className="text-center xl:p-4 xl:w-3/4 mb-5">
+      <p className="text-gray-500">Hello, I'm</p>
+      <h2 className="text-4xl font-bold tracking-wider md:flex md:justify-center"><LuBadgeCheck />Garv Chhokra</h2>
+      <p className="text-gray-500 text-lg mt-4">
+        AI/ML Developer | Data Scientist | Data Engineer | Data Analyst |
+        Software Developer | Full Stack Developer
+      </p>
+      <p className="text-gray-700 text-xl mt-8 xl:mt-16 md:p-5 justify-center sm:text-center">
+        Currently working as an <strong>I&IT Technology Analyst/Developer</strong>
+      </p>
+      <p className="text-gray-400 text-md">Based in Canada. </p>
+      <div className="flex justify-center xl:justify-between text-4xl mt-8 xl:mt-10 mb-10">
+        <Link href="https://www.linkedin.com/in/garvchhokra/" target="blank">
+          <AiFillLinkedin />
+        </Link>
+        <Link href="https://github.com/GarvChhokra" target="blank">
+          <AiFillGithub />
+        </Link>
       </div>
-    </>
+      <Button $primary>Resume</Button>
+      <Link href="#Contact">
+        <Button>Contact Me</Button>
+      </Link>
+    </div>
   );
 };
 

@@ -15,9 +15,9 @@ const Navbar: NavbarData[] = [
   {
     title: "Certifications",
   },
-  {
-    title: "Blogs",
-  },
+  // {
+  //   title: "Blogs",
+  // },
   {
     title: "Contact",
   },

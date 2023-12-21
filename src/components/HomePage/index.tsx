@@ -1,13 +1,13 @@
 import React from "react";
-import Info from "./Info";
+import Info from "./info";
 
 const HomePage = () => {
   return (
     <div className="xl:flex justify-center text-center xl:items-center p-10 mx-20">
       <div className="relative">
-        <div className="absolute xl:top-16 w-full z-0">
+        <div className="absolute xl:top-16 lg:top-16 w-full z-0">
           <svg
-            className="xl:w-80 animate-blob"
+            className="xl:w-80 lg:w-80 md:w-80 animate-blob"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
           >
