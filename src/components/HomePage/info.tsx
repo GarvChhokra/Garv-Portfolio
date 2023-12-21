@@ -25,7 +25,7 @@ const Button = styled.button<{ $primary?: boolean }>`
 const Info = () => {
   return (
     <div className="text-center xl:p-4 xl:w-3/4 mb-5">
-      <p className="text-gray-500">Hello, I'm</p>
+      <p className="text-gray-500">Hello, I&apos;m</p>
       <h2 className="text-4xl font-bold tracking-wider flex justify-center"><LuBadgeCheck />Garv Chhokra</h2>
       <p className="text-gray-500 text-lg mt-4">
         AI/ML Developer | Data Scientist | Data Engineer | Data Analyst |
@@ -43,7 +43,9 @@ const Info = () => {
           <AiFillGithub />
         </Link>
       </div>
+      {/* <a href="https://www.linkedin.com/in/garvchhokra/" target="_blank">
       <Button $primary>Resume</Button>
+      </a> */}
       <Link href="#Contact">
         <Button>Contact Me</Button>
       </Link>
