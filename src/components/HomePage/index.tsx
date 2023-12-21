@@ -3,11 +3,11 @@ import Info from "./info";
 
 const HomePage = () => {
   return (
-    <div className="xl:flex justify-center text-center xl:items-center p-10 mx-20">
+    <div className="xl:flex justify-center text-center xl:items-center md:items-center p-10 mx-4 sm:mx-10 lg:mx-20">
       <div className="relative">
-        <div className="absolute xl:top-16 lg:top-16 w-full z-0">
+        <div className="absolute xl:top-16 lg:top-16 sm:top-18 w-full z-0">
           <svg
-            className="xl:w-80 lg:w-80 md:w-80 animate-blob"
+            className="xl:w-80 lg:w-80 md:w-80 sm:w-80 animate-blob"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -19,12 +19,12 @@ const HomePage = () => {
           </svg>
         </div>
         <img
-          className="rounded-full z-10 relative"
+          className="rounded-full z-10 relative mb-10"
           src="garv_profile.png"
           alt="Profile"
         />
       </div>
-      <div className="xl:flex sm:text-center sm:py-10 pl-10">
+      <div className="xl:flex flex-col sm:text-center sm:py-10 pl-4 sm:pl-10">
         <Info />
       </div>
     </div>
