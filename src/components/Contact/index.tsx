@@ -16,7 +16,7 @@ const Contact = () => {
           <Link
             className="flex items-center hover:underline"
             href="mailto:garvchhokra@gmail.com"
-            target="_blank"
+            target="blank"
           >
             <AiOutlineMail className="mr-2" />
             garvchhokra@gmail.com
@@ -26,7 +26,7 @@ const Contact = () => {
           <Link
             className="flex items-center hover:underline"
             href="https://www.linkedin.com/in/garvchhokra/"
-            target="_blank"
+            target="blank"
           >
             <AiFillLinkedin className="mr-2" />
             LinkedIn

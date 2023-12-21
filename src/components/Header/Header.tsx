@@ -25,7 +25,6 @@ const Header: React.FC<HomeProps> = ({ navbarData }) => {
       <div className="sm:flex hidden items-center space-x-8">
         {navbarData.map((item, index) => (
           <Link href={`#${item.title}`} key={index}>
-            {/* Remove the <a> tag here */}
             <span className="text-xl">{item.title}</span>
           </Link>
         ))}
@@ -39,7 +38,6 @@ const Header: React.FC<HomeProps> = ({ navbarData }) => {
         <div className="sm:hidden flex flex-col items-center space-y-4 bg-white p-4 mt-4">
           {navbarData.map((item, index) => (
             <Link key={index} href={`#${item.title}`}>
-              {/* Remove the <a> tag here */}
               <span className="text-xl">{item.title}</span>
             </Link>
           ))}
