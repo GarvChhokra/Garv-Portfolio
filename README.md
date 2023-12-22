@@ -12,4 +12,4 @@ This portfolio website showcases my skills, projects, and experience in the fiel
 - [Next.js](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
 - [Styled Components](https://styled-components.com/)
-
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
