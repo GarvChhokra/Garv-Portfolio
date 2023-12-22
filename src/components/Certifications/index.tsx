@@ -28,7 +28,6 @@ const Certificates = () => {
               <a
                 href={certificate.link}
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
               >
                 View Certificate

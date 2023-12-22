@@ -31,7 +31,7 @@ export const certificates = [
     },
     {
       title: "Tensorflow Developer",
-      platform: "Coursera",
+      platform: "Udemy",
       link: "https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/",
       imageSrc: "progress.jpg",
     },
