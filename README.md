@@ -10,6 +10,6 @@ This portfolio website showcases my skills, projects, and experience in the fiel
 
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- [Tailwind]
+- [Tailwind](https://tailwindcss.com/)
 - [Styled Components](https://styled-components.com/)
 
