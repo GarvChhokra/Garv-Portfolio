@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react";
-import { NavbarData } from "./Navbar";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { FiMenu, FiX } from "react-icons/fi";
+import { NavbarData } from "./Navbar";
 
 interface HomeProps {
   navbarData: NavbarData[];
@@ -18,15 +18,20 @@ const Header: React.FC<HomeProps> = ({ navbarData }) => {
   return (
     <div className="flex flex-col sm:flex-row justify-between items-center p-6 sm:p-12 mx-auto w-full">
       <div>
-        <Link href="#">
+        <ScrollLink to="top" smooth={true} duration={500}>
           <h1 className="text-4xl font-medium cursor-pointer">Garv Chhokra</h1>
-        </Link>
+        </ScrollLink>
       </div>
       <div className="sm:flex hidden items-center space-x-8">
         {navbarData.map((item, index) => (
-          <Link href={`#${item.title}`} key={index}>
-            <span className="text-xl">{item.title}</span>
-          </Link>
+          <ScrollLink
+            to={item.title}
+            smooth={true}
+            duration={500}
+            key={index}
+          >
+            <span className="text-xl hover:text-gray-600 hover:underline cursor-pointer">{item.title}</span>
+          </ScrollLink>
         ))}
       </div>
       <div className="sm:hidden flex items-center">
@@ -37,9 +42,14 @@ const Header: React.FC<HomeProps> = ({ navbarData }) => {
       {menuOpen && (
         <div className="sm:hidden flex flex-col items-center space-y-4 bg-white p-4 mt-4">
           {navbarData.map((item, index) => (
-            <Link key={index} href={`#${item.title}`}>
+            <ScrollLink
+              to={item.title}
+              smooth={true}
+              duration={500}
+              key={index}
+            >
               <span className="text-xl">{item.title}</span>
-            </Link>
+            </ScrollLink>
           ))}
         </div>
       )}
