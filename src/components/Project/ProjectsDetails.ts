@@ -16,7 +16,7 @@ export const Project = [
     liveDemoLink: null,
   },
   {
-    name: "Notes Application",
+    name: "Notes Android Application",
     description: "Created a notes application using Kotlin. Has implemented Authentication and Realtime Database using Firebase",
     techUsed: ["Kotlin", "Firebase"],
     githubLink: "https://github.com/GarvChhokra/TodoApp_Auth_Db-Kotlin",
