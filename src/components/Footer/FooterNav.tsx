@@ -1,10 +1,12 @@
 import React from "react";
 import { NavbarData } from "../Header/Navbar";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 interface ProjectProps {
   navbarData: NavbarData[];
 }
+
 const FooterNav: React.FC<ProjectProps> = ({ navbarData }) => {
   return (
     <>
@@ -12,9 +14,15 @@ const FooterNav: React.FC<ProjectProps> = ({ navbarData }) => {
         <ul className="md:flex text-center justify-center">
           {navbarData.map((itm, index) => {
             return (
-              <Link className="mx-4" href={`#${itm.title}`} key={index}>
-                <li className="cursor-pointer text-xl">{itm.title}</li>
-              </Link>
+              <ScrollLink
+                to={itm.title}
+                smooth={true}
+                duration={500}
+                key={index}
+                className="mx-4 cursor-pointer text-xl"
+              >
+                {itm.title}
+              </ScrollLink>
             );
           })}
         </ul>
