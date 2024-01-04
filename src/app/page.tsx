@@ -10,6 +10,7 @@ import HomePage from "@/components/HomePage";
 import Projects from "@/components/Project";
 import Link from "next/link";
 import Loading from '@/components/Loading';
+import Head from 'next/head';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -24,6 +25,10 @@ export default function Home() {
 
     return (
         <div>
+            <Head>
+                <title>Garv Chhokra</title>
+                <meta name="description" content="Garv Chhokra's Portfolio" />
+            </Head>
             {loading ? (
 				<div>
                 	<Loading/>
