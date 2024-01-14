@@ -18,6 +18,12 @@ export const certificates = [
       imageSrc: "foundation.jpeg",
     },
     {
+      title: "Fundamentals of Scalable Data Science",
+      platform: "Coursera",
+      link: "https://coursera.org/share/852a3fa89efc504b9d0575166bde6a90",
+      imageSrc: "fundamentalsScalableDataScience.jpeg",
+    },
+    {
       title: "Data Analysis with R Programming",
       platform: "Coursera",
       link: "https://www.coursera.org/account/accomplishments/verify/WDM37NALVPM5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",

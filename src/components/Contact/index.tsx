@@ -11,7 +11,7 @@ const Contact = () => {
         Contact Me
       </h2>
       <p>Tel: <Link href="tel:4379913320">4379913320</Link></p>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-10 text-xl">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-10 text-xl mb-10">
         <div className="flex flex-col items-center mb-6 md:mb-0 md:border border-gray-400 rounded-2xl p-5">
           <Link
             className="flex items-center hover:underline"
