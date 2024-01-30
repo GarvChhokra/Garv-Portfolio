@@ -35,7 +35,7 @@ const AboutUs = () => {
               <HiBookOpen className="text-4xl mb-4 text-blue-500" />
               <h3 className="text-2xl font-bold mb-4">Education</h3>
               <p className="text-gray-700 text-sm md:text-base">
-                Student at Centennial College pursuing Software Engineering
+                3rd Year student at Centennial College pursuing Software Engineering
                 Technology with a major in Artificial Intelligence.
               </p>
             </div>
