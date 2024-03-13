@@ -14,7 +14,11 @@ const skillsMPBSD = [
       { name: "TypeScript" },
       { name: "C#" },
       { name: "SQL" },
+      { name: "Java" },
+      { name: "Selenium" },
       { name: "Agile" },
+      { name: "Entity Framework" },
+      { name: "ASP.NET" },
       { name: "SDLC" },
       { name: "Deployment" },
       { name: "Frontend" },
@@ -25,6 +29,7 @@ const skillsMPBSD = [
       { name: "Git" },
       { name: "VS Code" },
       { name: "Visual Studio" },
+      { name: "IntelliJ" },
       { name: "Azure Devops" },
       { name: "SQL Server Management Tool" },
       { name: "Browser Stack" },
@@ -56,9 +61,9 @@ const Experience = () => {
     <div id="Experience">
       <section className="p-4 md:p-8 lg:p-12 text-center">
         <p className="text-gray-500 text-sm md:text-base">Explore My</p>
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wide mt-2">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wide mt-2">
           Experience
-        </h2>
+        </h1>
         <div className="flex items-center justify-center mt-10 text-xl">
           <article className="flex flex-col md:flex-row items-stretch md:space-x-4 mt-20 w-full md:w-3/4">
             <div className="p-6 md:flex-1 border border-1 border-gray-500 rounded-lg flex flex-col">
@@ -70,17 +75,12 @@ const Experience = () => {
                 Government of Ontario
               </p>
               <p className="text-gray-800 text-sm mb-6 leading-6">
-                During my co-op experience as an I&IT Technology Analyst at the
-                MPBSD, I had the opportunity to work on a diverse range of
-                projects. I developed a Python-based machine learning model to
-                filter offensive content from license plates. I collaborated on
-                bug fixes and improvements on the frontend side. Implemented C#
-                generic repository with Entity Framework in MVC architecture,
-                creating API endpoints for efficient database data retrieval
-                within the .NET framework. I also crafted and documented user
-                story test cases for quality assurance and conducted thorough
-                manual testing, including website flow, responsive design, and
-                data validation.
+                During my co-op at MPBSD, I developed a Python ML model to
+                filter offensive content from license plates, collaborated on
+                frontend enhancements, and implemented a C# generic repository
+                with Entity Framework for efficient database retrieval. I also
+                crafted user story test cases, conducted manual testing, and
+                contributed to automation testing using Java and Selenium.
               </p>
               <hr className="my-6" />
               <div>
@@ -116,13 +116,9 @@ const Experience = () => {
                 During my co-op term at Tribunals Ontario, I had worked in
                 multiple teams. I conducted comprehensive automated and manual
                 testing of the Tribunals Ontario Portal, using Selenium and
-                Python. I also maintained and updated WordPress pages for the
-                Tribunals Ontario website, ensuring content requirements were
-                met. Proficiency in Microsoft Excel and PowerBI enabled me to
+                Python. Proficiency in Microsoft Excel and PowerBI enabled me to
                 create insightful data visualizations for IT asset management
-                reporting. Handled IT asset management, resolved technical
-                issues with vendors, conducted IT system testing, and maintained
-                a SharePoint site.
+                reporting.
               </p>
               <hr className="my-6" />
               <div>

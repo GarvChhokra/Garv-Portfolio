@@ -8,9 +8,9 @@ const Certificates = () => {
         <p className="text-gray-500 text-sm md:text-base">
           Have a look into my
         </p>
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wide mt-2">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wide mt-2">
           Certifications
-        </h2>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((certificate, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">

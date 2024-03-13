@@ -7,9 +7,9 @@ const Projects = () => {
     <div id="Projects">
     <div className="bg-gray-100 p-4 md:p-8 lg:p-12 text-center">
       <p className="text-gray-500 text-sm md:text-base">Explore My</p>
-      <h2 className="text-3xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
+      <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
         Projects
-      </h2>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Project.map((project, index) => (
           <div

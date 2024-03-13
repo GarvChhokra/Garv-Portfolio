@@ -8,14 +8,33 @@ const AboutUs = () => {
   return (
     <div id="About">
       <Head>
-        <title>About Garv Chhokra</title>
-        <meta name="description" content="Learn more about me" />
+        <title>About Garv Chhokra - Software Engineer</title>
+        <meta
+          name="description"
+          content="Learn more about Garv Chhokra, a dedicated and passionate software engineer with expertise in artificial intelligence and machine learning."
+        />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "Garv Chhokra",
+              "jobTitle": "Software Engineer",
+              "description": "Dedicated and passionate software engineer with expertise in artificial intelligence and machine learning.",
+              "url": "https://www.example.com",
+              "image": "https://www.example.com/garv_profile.png",
+              "sameAs": [
+                "https://www.linkedin.com/in/garvchhokra",
+                "https://github.com/garvchhokra"
+
+              `}
+        </script>
       </Head>
-      <div className="bg-gray-100 p-4 md:p-8 lg:p-12 text-center">
+      <div id="About" className="bg-gray-100 p-4 md:p-8 lg:p-12 text-center">
         <p className="text-gray-500 text-sm md:text-base">Get to know more</p>
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-2 tracking-wide">
           About Me
-        </h2>
+        </h1>
         <div className="flex flex-col md:flex-row justify-center items-center mt-10">
           <img
             src="DSC02951.JPG"
@@ -35,8 +54,8 @@ const AboutUs = () => {
               <HiBookOpen className="text-4xl mb-4 text-blue-500" />
               <h3 className="text-2xl font-bold mb-4">Education</h3>
               <p className="text-gray-700 text-sm md:text-base">
-                3rd Year student at Centennial College pursuing Software Engineering
-                Technology with a major in Artificial Intelligence.
+                3rd Year student at Centennial College pursuing Software
+                Engineering Technology with a major in Artificial Intelligence.
               </p>
             </div>
           </div>
